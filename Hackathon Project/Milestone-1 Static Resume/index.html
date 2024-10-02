@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <img src="./image.png">
+        <h1>My Resume</h1>
+        <form id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+            <!-- <label for="title">Job Title:</label>
+            <input type="text" id="title" placeholder="Enter your job title" required><br><br> -->
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" required><br><br>
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" placeholder="Write a short summary" required></textarea><br><br>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" placeholder="Enter your skills"><br><br>
+
+            <button type="button" id="toggle-skills-btn">Hide/Show Skills</button><br><br>
+
+
+            <label for="experience">Experience:</label>
+            <input type="text" id="experience" placeholder="Enter your experience"><br><br>
+
+            <label for="education">Education:</label>
+            <input type="text" id="education" placeholder="Enter your education"><br><br>
+
+            <button type="button" id="generate-btn">Generate Preview</button>
+        </form>
+    </div>
+
+    <div id="resume-preview" class="resume">
+        <!-- The preview will be generated here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

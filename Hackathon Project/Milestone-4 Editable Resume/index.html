@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editable Resume</h1>
+        <form id="resume-form">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" placeholder="Enter your contact details" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+
+            <label for="github">Github ID:</label>
+            <input type="url" id="github" placeholder="Enter your Github profile" required><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address" required><br>
+
+            <h2>Education</h2>
+            <label for="higher-school">Higher School:</label>
+            <input type="text" id="higher-school" placeholder="Enter your higher school" required><br>
+
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" placeholder="Enter your degree" required><br>
+
+            <h2>Experience & Skills</h2>
+            <label for="experience">Experience:</label>
+            <textarea id="experience" placeholder="Enter your experience" rows="3" required></textarea><br>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" placeholder="Enter your skills" rows="3" required></textarea><br>
+
+            <button type="button" id="generate-resume">Generate Resume</button>
+        </form>
+
+        <div id="resume-section" style="display:none;">
+            <h2>Your Resume</h2>
+            <div id="resume-content">
+                <h3>Personal Information</h3>
+                <p><strong>Name:</strong> <span id="resume-name"></span></p>
+                <p><strong>Contact:</strong> <span id="resume-contact"></span></p>
+                <p><strong>Email:</strong> <span id="resume-email"></span></p>
+                <p><strong>Github:</strong> <span id="resume-github"></span></p>
+                <p><strong>Address:</strong> <span id="resume-address"></span></p>
+
+                <h3>Education</h3>
+                <p><strong>Higher School:</strong> <span id="resume-higher-school"></span></p>
+                <p><strong>Degree:</strong> <span id="resume-degree"></span></p>
+
+                <h3>Experience & Skills</h3>
+                <p><strong>Experience:</strong> <span id="resume-experience"></span></p>
+                <p><strong>Skills:</strong> <span id="resume-skills"></span></p>
+            </div>
+
+            <button type="button" id="edit-resume">Edit Resume</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
